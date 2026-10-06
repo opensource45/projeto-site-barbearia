@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbearia Black Jack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                BLACK<span>JACK</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#agendamento" class="btn btn-small">
+                Agendar
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="subtitle">
+                    ESTILO • PRECISÃO • ATITUDE
+                </p>
+
+                <h1>
+                    SEU ESTILO.<br>
+                    NOSSO <span>TRABALHO.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Cortes modernos, barba impecável e aquele atendimento
+                    que você merece.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#agendamento" class="btn">
+                        Agendar horário
+                    </a>
+
+                    <a href="#servicos" class="btn btn-outline">
+                        Ver serviços
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services section" id="servicos">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <p>O QUE FAZEMOS</p>
+                    <h2>NOSSOS SERVIÇOS</h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">✂</div>
+
+                        <h3>Corte Masculino</h3>
+
+                        <p>
+                            Corte personalizado de acordo com seu estilo
+                            e formato de rosto.
+                        </p>
+
+                        <strong>R$ 35</strong>
+                    </article>
+
+
+                    <article class="service-card featured">
+
+                        <div class="service-icon">♠</div>
+
+                        <h3>Corte + Barba</h3>
+
+                        <p>
+                            O combo completo para deixar seu visual
+                            renovado.
+                        </p>
+
+                        <strong>R$ 55</strong>
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">🧔</div>
+
+                        <h3>Barba</h3>
+
+                        <p>
+                            Modelagem, acabamento e cuidados para uma
+                            barba impecável.
+                        </p>
+
+                        <strong>R$ 25</strong>
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">★</div>
+
+                        <h3>Degradê</h3>
+
+                        <p>
+                            Degradê preciso com acabamento profissional.
+                        </p>
+
+                        <strong>R$ 40</strong>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>BJ</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">
+                        SOBRE A BARBEARIA
+                    </p>
+
+                    <h2>
+                        MAIS QUE UM CORTE.<br>
+                        UMA EXPERIÊNCIA.
+                    </h2>
+
+                    <p>
+                        A Black Jack nasceu para homens que gostam de
+                        cuidar do visual sem abrir mão de personalidade.
+                    </p>
+
+                    <p>
+                        Nossa equipe trabalha com técnicas modernas,
+                        atendimento personalizado e muita atenção aos
+                        detalhes.
+                    </p>
+
+                    <div class="stats">
+
+                        <div>
+                            <strong>5+</strong>
+                            <span>Anos de experiência</span>
+                        </div>
+
+                        <div>
+                            <strong>2k+</strong>
+                            <span>Clientes atendidos</span>
+                        </div>
+
+                        <div>
+                            <strong>5★</strong>
+                            <span>Avaliação média</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAMENTO -->
+        <section class="booking section" id="agendamento">
+
+            <div class="container booking-box">
+
+                <div>
+                    <p class="section-label">
+                        RESERVE SEU HORÁRIO
+                    </p>
+
+                    <h2>
+                        PRONTO PARA<br>
+                        MUDAR O VISUAL?
+                    </h2>
+
+                    <p>
+                        Escolha seu serviço e entre em contato para
+                        reservar seu horário.
+                    </p>
+                </div>
+
+                <form id="bookingForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Escolha um serviço
+                        </option>
+
+                        <option value="Corte Masculino">
+                            Corte Masculino
+                        </option>
+
+                        <option value="Corte + Barba">
+                            Corte + Barba
+                        </option>
+
+                        <option value="Barba">
+                            Barba
+                        </option>
+
+                        <option value="Degradê">
+                            Degradê
+                        </option>
+
+                    </select>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                    <button type="submit" class="btn">
+                        Solicitar agendamento
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contact section" id="contato">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <p>FALE CONOSCO</p>
+                    <h2>ONDE ESTAMOS</h2>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <h3>Endereço</h3>
+                        <p>
+                            Rua Principal, 123<br>
+                            Rio de Janeiro - RJ
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <h3>WhatsApp</h3>
+                        <p>
+                            (21) 99999-9999
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>🕐</span>
+                        <h3>Horário</h3>
+                        <p>
+                            Terça a Sábado<br>
+                            09:00 às 20:00
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="logo">
+                BLACK<span>JACK</span>
+            </div>
+
+            <p>
+                © 2026 Black Jack Barbearia.
+                Todos os direitos reservados.
+            </p>
+
+            <div class="social">
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
